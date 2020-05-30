@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_prof_Name"
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/prof_Name_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/prof_Name_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_prof_lastname"
+            android:layout_below="@id/card_prof_Name"
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/prof_lastname_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="lastname"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr_lastname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="lastname"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/prof_lastname_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_prof_height"
+            android:layout_below="@id/card_prof_lastname"
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/prof_height_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Height"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr__current_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Height"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/prof_height_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_prof_weight"
+            android:layout_below="@+id/card_prof_height">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/prof_weight_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Weight"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr__current_weight"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Weight"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/prof_weight_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_prof_age"
+            android:layout_below="@+id/card_prof_weight">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/prof_age_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="age"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr__current_age"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Height"
+                    android:textSize="18sp"
+
+                    android:layout_below="@+id/prof_age_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+<RelativeLayout
+    android:id="@+id/Rel_b"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+
+        app:menu="@menu/navigation" />
+</RelativeLayout>
+
+</RelativeLayout>

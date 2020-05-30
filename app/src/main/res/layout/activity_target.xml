@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TargetActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/Rel_t"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_target_height"
+
+            >
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/target_height_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Target Height"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr__target_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Height"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/target_height_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_target_weight"
+            android:layout_below="@+id/card_target_height">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/target_weight_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Target Weight"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr__target_weight"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Weight"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/target_weight_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:id="@+id/card_target_steps"
+            android:layout_below="@+id/card_target_weight">
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:id="@+id/card__target_steps"
+                >
+                <TextView
+                    android:id="@+id/target_steps_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="Target Steps"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/usr__target_steps"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:text="steps"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/target_steps_txt"
+                    android:textColor="@android:color/darker_gray"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/Rel_b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+
+</RelativeLayout>

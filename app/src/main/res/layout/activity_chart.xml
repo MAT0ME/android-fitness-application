@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chart_Activity">
+
+    <button
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="Refresh"
+        android:id="@+id/bt_r"
+
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+android:layout_above="@id/Rel_b"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+                android:hint="day"
+            android:id="@+id/graph_height_day"/>
+            <EditText
+               android:layout_alignParentRight="true"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="Height"
+                android:id="@+id/graph_height_value"/>
+         <Button
+             android:id="@+id/bt_height_target"
+             android:layout_below="@id/graph_height_day"
+             android:text="Apply Target height"
+             android:layout_width="200dp"
+             android:layout_height="40dp"
+             />
+            <Button
+                android:id="@+id/bt_height_current"
+                android:layout_below="@id/graph_height_day"
+                android:layout_toRightOf="@id/bt_height_target"
+                android:text="Apply Current Height"
+                android:layout_width="200dp"
+                android:layout_height="40dp" />
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_below="@+id/bt_height_target"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/Line_height">
+
+            </com.github.mikephil.charting.charts.LineChart>
+
+
+
+
+
+
+            <EditText
+
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/Line_height"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="day"
+                android:id="@+id/graph_weight_day"/>
+            <EditText
+                android:layout_marginTop="50dp"
+                android:layout_below="@id/Line_height"
+                android:layout_alignParentRight="true"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="weight"
+                android:id="@+id/graph_weight_value"/>
+            <Button
+                android:id="@+id/bt_weight_target"
+                android:layout_below="@id/graph_weight_day"
+                android:text="Apply Target weight"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                />
+            <Button
+                android:id="@+id/bt_weight_current"
+                android:layout_below="@id/graph_weight_day"
+                android:layout_toRightOf="@id/bt_height_target"
+                android:text="Apply Current weight"
+                android:layout_width="200dp"
+                android:layout_height="40dp" />
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_below="@+id/bt_weight_target"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/Line_weight">
+
+            </com.github.mikephil.charting.charts.LineChart>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/Rel_b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
